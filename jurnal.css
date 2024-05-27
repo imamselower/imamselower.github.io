@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 18px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    margin: 0 -20px 10px;
+}
+
+.media {
+    margin-top: 10px;
+}
+
+#imagePreview, #videoPreview {
+    margin-top: 10px;
+}
+
+#imagePreview img, #videoPreview video {
+    max-width: 100%;
+    height: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="file"] {
+    display: block;
+    margin-top: 5px;
+}
+.image-container {
+    text-align: center;
+}
+
+.image-caption, .additional-content {
+    text-align: justify;
+}
+

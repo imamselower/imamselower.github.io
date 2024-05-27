@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Digital</title>
+    <link rel="stylesheet" href="jurnal.css">
+</head>
+<body>
+    <div class="container">
+        <header id="judul">
+            <h1 contenteditable="true" id="judulJurnal">Judul Jurnal</h1>
+            <div contenteditable="true" id="namaPenulis">Nama Penulis</div>
+        </header>
+        
+        <section id="abstrak">
+            <h2>Abstrak</h2>
+            <div contenteditable="true" id="abstrakContent" class="content"></div>
+        </section>
+        
+        <section id="pendahuluan">
+            <h2>Pendahuluan</h2>
+            <div contenteditable="true" id="pendahuluanContent" class="content"></div>
+        </section>
+        
+        <section id="metode">
+            <h2>Metode</h2>
+            <div contenteditable="true" id="metodeContent" class="content"></div>
+        </section>
+        
+        <section id="hasil">
+            <h2>Hasil dan Pembahasan</h2>
+            <div contenteditable="true" id="hasilContent" class="content"></div>
+            <div class="media">
+                <label for="imageUpload">Unggah Gambar:</label>
+                <input type="file" id="imageUpload" accept="image/*">
+                <div id="imagePreview"></div>
+                <div class="text-justify" contenteditable="true" id="imageCaption" class="content" placeholder="Tambahkan keterangan gambar..."></div>
+                <div class="text-justify" contenteditable="true" id="additionalContent" class="content" placeholder="Tambahkan konten di sini..."></div>
+            </div>
+        </section>
+        
+        <section id="kesimpulan">
+            <h2>Kesimpulan</h2>
+            <div contenteditable="true" id="kesimpulanContent" class="content"></div>
+        </section>
+        
+        <section id="daftar-pustaka">
+            <h2>Daftar Pustaka</h2>
+            <div contenteditable="true" id="daftarpustakaContent" class="content">
+
+            </div>
+            <button onclick="sortDaftarPustaka()">Urutkan Daftar Pustaka</button>
+        </section>
+
+        <button onclick="submitJournal()">Submit Jurnal</button>
+    </div>
+
+    <script src="jurnal.js"></script>
+</body>
+</html>
